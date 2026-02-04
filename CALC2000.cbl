@@ -51,8 +51,8 @@
                move 1 to year-counter
                perform 120-calculate-next-fv
                    until year-counter > number-of-years
-               move future-value to edited-future-value
-               display "Future value = " edited-future-value.
+               move future-value to edited-decimal-value
+               display "Future value = " edited-decimal-value.
        
        120-calculate-next-fv.
 
