@@ -20,14 +20,16 @@
 
            05  number-entered              pic 9        value 1.
            05  investment-amount           pic 99999    value 1000.  
-           05  number-of-years             pic 99.
-           05  yearly-interest-rate        pic 99v9.
+           05  number-of-years             pic 99       value 10. 
+           05  yearly-interest-rate        pic 99v9     value 5.5.
 
        01  work-fields.
 
            05  future-value                pic 9(7)v99.
            05  year-counter                pic 999.
-           05  edited-future-value         pic z,zzz,zzz.99.
+           
+           05 edited-whole-value           pic zz,zzz,zz9.
+           05 edited-decimal-value         pic zzz,zzz,99.
 
        procedure division.
 
